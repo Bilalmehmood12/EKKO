@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
 
-  CustomTextField({
+  const CustomTextField({
     Key? key,
     required this.width,
     required this.height,
@@ -19,7 +19,7 @@ class CustomTextField extends StatefulWidget {
   final String? lead, action;
   final String text;
   final int? maxLine;
-  bool? obscureText;
+  final bool? obscureText;
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
