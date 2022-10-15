@@ -15,8 +15,8 @@ class EditProfileTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: Dimensions.getHeight(85, height),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 3),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

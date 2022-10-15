@@ -7,37 +7,39 @@ class TextIconButton extends StatelessWidget {
     required this.width,
     required this.height,
     required this.text,
-    required this.icon,
+    this.icon,
     required this.color,
-    required this.background,
+    required this.background, this.asset,
   }) : super(key: key);
 
   final double width;
   final double height;
   final String text;
+  final String? asset;
   final IconData? icon;
   final Color color, background;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: Dimensions.getWidth(185, width),
-      height: Dimensions.getHeight(55, height),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 11),
       decoration: BoxDecoration(
           color: background,
           borderRadius: BorderRadius.circular(15)
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
         children: [
           Text(
             text,
             style: TextStyle(
                 color: color, fontSize: 16, fontWeight: FontWeight.w500),
           ),
-          const SizedBox(
-            width: 5,
-          ),
+          (icon != null) || (asset != null)
+              ? const SizedBox(
+            width: 8,
+          ): const SizedBox(width: 0,),
           icon == null
               ? const SizedBox(
                   width: 0,
@@ -46,7 +48,12 @@ class TextIconButton extends StatelessWidget {
                   icon,
                   color: color,
                   size: 18,
-                )
+                ),
+          asset == null
+              ? const SizedBox(
+            width: 0,
+          )
+              : Image.asset(asset!, scale: 6,)
         ],
       ),
     );

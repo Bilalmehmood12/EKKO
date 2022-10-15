@@ -44,7 +44,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           ]
       ),
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: (widget.lead != null)&&(widget.action != null) ? 0: 15),
+        padding: EdgeInsets.only(left: (widget.lead != null) ? 0: 15, right: (widget.action != null) ? 0: 15),
         child: TextFormField(
           decoration: InputDecoration(
             hintText: widget.text,

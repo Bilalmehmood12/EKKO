@@ -1,4 +1,5 @@
 import 'package:ekko/Providers/home_screen_provider.dart';
+import 'package:ekko/screens/home_screen.dart';
 
 import 'package:ekko/utils/color.dart';
 import 'package:ekko/utils/dimensions.dart';

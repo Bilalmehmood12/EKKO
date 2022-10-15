@@ -50,7 +50,7 @@ class _EditProfileState extends State<EditProfile> {
             width: width,
             text: 'Edit Profile',
             onTap: () {
-              context.read<HomeScreenProvider>().screen = 3;
+              context.read<HomeScreenProvider>().screen = 2;
             },
           ),
           Positioned(
@@ -86,7 +86,7 @@ class _EditProfileState extends State<EditProfile> {
                 color: AppColors.tertiaryColor,
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: Column(
                   children: List.generate(
                       labels.length,
@@ -95,6 +95,28 @@ class _EditProfileState extends State<EditProfile> {
               ),
             ),
           ),
+          Positioned(
+            top: Dimensions.getHeight(138-44, height),
+            left: Dimensions.getWidth(159, width),
+            child: SizedBox(
+              width: Dimensions.getWidth(110, width),
+              height: Dimensions.getHeight(110, height),
+              child: Image.asset('assets/images/profile_photo1.png'),
+            ),
+          ),
+          Positioned(
+            top: Dimensions.getHeight(211-44, height),
+            left: Dimensions.getWidth(225, width),
+            child: Container(
+              width: Dimensions.getWidth(43, width),
+              height: Dimensions.getHeight(43, height),
+              decoration: BoxDecoration(
+                color: AppColors.tertiaryColor,
+                shape: BoxShape.circle
+              ),
+              child: Image.asset('assets/images/camera.png', scale: 5,),
+            ),
+          )
         ],
       ),
     );

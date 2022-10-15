@@ -1,8 +1,10 @@
+import 'package:ekko/Providers/home_screen_provider.dart';
 import 'package:ekko/screens/login_screen.dart';
 import 'package:ekko/screens/sign_up_step_one_screen.dart';
 import 'package:ekko/utils/color.dart';
 import 'package:ekko/utils/dimensions.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
