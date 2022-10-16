@@ -31,8 +31,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    super.initState();
     context.read<HomeScreenProvider>().index = 0;
+    super.initState();
   }
 
   @override
