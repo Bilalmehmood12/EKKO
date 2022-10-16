@@ -1,6 +1,6 @@
  # EKKO
  
- EKKO  is a portable device that uses vibrational waves to treat neurological disorders based on Neurotransmission Cognitive Theory.
+ ***EKKO***  is a portable device that uses vibrational waves to treat neurological disorders based on ***Neurotransmission Cognitive Theory***.
  
  ## Preview
  
