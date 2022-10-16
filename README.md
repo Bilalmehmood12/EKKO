@@ -32,3 +32,7 @@ https://user-images.githubusercontent.com/57256214/196044057-6d0c97aa-7496-4ea6-
   12. **SizexBox()**
   13. **Spacer()**
   and many more.
+  
+  ## Figma Design
+  
+  Here is the ***[Fimga Design](https://www.figma.com/file/3drBQaQQQIoeJ2iXdHRd7E/EKKO-Screens)*** for this project.
